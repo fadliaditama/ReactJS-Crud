@@ -19,6 +19,7 @@ function ManajemenKeuangan(){
     const deleteAnggaran = async (id) =>{
         await axios.delete(`http://localhost:5000/anggaran/${id}`);
         getAnggaran();
+        alert("Data dihapus");
     }
 
     return(
