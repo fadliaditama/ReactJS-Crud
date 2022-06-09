@@ -21,7 +21,7 @@ function EditAnggaran(){
         navigate("/manajemen-keuangan");
     }
 
-    useEffect((id) => {
+    useEffect(() => {
         getAnggaranById();
     }, []);
 
