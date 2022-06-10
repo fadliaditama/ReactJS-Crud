@@ -24,7 +24,7 @@ function AddAnggaran(){
         <div>
             {/* Form Tambah */}
                 <div>
-                <h1 className="font-bold">Tambah Datas</h1>
+                <h1 className="font-bold">Tambah Data</h1>
                     <form onSubmit={ saveAnggaran }>
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 w-full mb-6 group">

@@ -1,7 +1,7 @@
 GET http://localhost:5000/anggaran
 
 ###
-GET http://localhost:5000/anggaran/2
+GET http://localhost:5000/anggaran/1
 
 ###
 POST http://localhost:5000/anggaran

@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Beranda />} />
           <Route path='/manajemen-keuangan' element={<ManajemenKeuangan />} />
           <Route path='/add-anggaran' element={<AddAnggaran />} />
-          <Route path='/edit-anggaran/:id' element={<EditAnggaran />} />
+          <Route path='/edit-anggaran/:id/*' element={<EditAnggaran />} />
         </Routes>
       </BrowserRouter>
     </div>

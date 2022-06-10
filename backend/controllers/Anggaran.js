@@ -11,12 +11,13 @@ export const getAllAnggaran = async (req, res) => {
 
 export const getAnggaranById = async (req, res) => {
     try{
-        const anggaranID = await AnggaranModels.findAll({
+        const anggaranId = await AnggaranModels.findAll({
             where: {
                 id: req.params.id
             }
         });
-        res.json(anggaranID[0]);
+        res.json(anggaranId[0]);
+        console.log(anggaranId)
     } catch(error){
         res.json({ message: error.message });
     }

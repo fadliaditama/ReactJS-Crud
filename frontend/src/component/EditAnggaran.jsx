@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
@@ -21,16 +22,16 @@ function EditAnggaran(){
         navigate("/manajemen-keuangan");
     }
 
-    useEffect(() => {
-        getAnggaranById();
-    }, []);
-
     const getAnggaranById = async () => {
-        const response = await axios.get(`http://localhost:5000/anggaran/edit-anggaran/${id}`);
+        const response = await axios.get(`http://localhost:5000/anggaran/${id}`);
         setNamaAnggaran(response.data.nama_anggaran);
         setPenanggungJawab(response.data.penanggung_jawab);
         setJumlahAnggaran(response.data.jumlah_anggaran);
     }
+
+    useEffect(() => {
+        getAnggaranById();
+    }, []);
 
     return(
         <div>
